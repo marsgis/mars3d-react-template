@@ -1,0 +1,61 @@
+{
+  "name": "mars3d-react-cli",
+  "version": "2.0.0",
+  "description": "Mars3D三维地球-React脚手架",
+  "main": "index.js",
+  "keywords": [
+    "marsgis",
+    "mars3d",
+    "cesium",
+    "react",
+    "gis"
+  ],
+  "scripts": {
+    "serve": "webpack-dev-server --config webpack.config.js --progress",
+    "test": "eslint .",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "axios": "^0.18.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.3",
+    "html-webpack-include-assets-plugin": "^2.0.0",
+    "@turf/turf": "^5.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "mapv": "^2.0.34",
+    "echarts": "^4.5.0",
+    "cesium": "^1.66",
+    "strip-pragma-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marsgis/mars3d-react-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marsgis/mars3d-react-cli/issues",
+    "email": "wh@marsgis.cn"
+  },
+  "author": {
+    "name": "火星科技",
+    "url": "http://www.marsgis.cn"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/marsgis/mars3d-react-cli"
+}
