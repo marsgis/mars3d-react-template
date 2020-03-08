@@ -32,7 +32,7 @@
     "jquery": "^3.3.1",
     "mapv": "^2.0.34",
     "echarts": "^4.5.0",
-    "cesium": "^1.66",
+    "cesium": "^1.67",
     "strip-pragma-loader": "^1.0.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",
