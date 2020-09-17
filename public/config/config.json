@@ -144,12 +144,12 @@
             {
                 "type": "3dtiles",
                 "name": "合肥市区",
-                "url": "http://data.marsgis.cn/3dtiles/jzw-hefei/tileset.json", 
-                "showClickFeature":true,
+                "url": "http://data.marsgis.cn/3dtiles/jzw-hefei/tileset.json",           
                 "popup": [
                     { "field": "name", "name": "名称" },
                     { "field": "floor", "name": "楼层" }
                 ],
+                "showClickFeature":true,
                 "visible":true
             }
         ]
