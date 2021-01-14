@@ -8,7 +8,7 @@ import * as Cesium from "cesium/Cesium";
 import mars3d from "./mars3d/mars3d";
 ```
 
- 其他技术栈，请参考 [Mars3D开源导航](https://github.com/marsgis/MarsGIS-for-Cesium)
+ 其他技术栈，请参考 [Mars3D开源导航](https://github.com/marsgis/mars3d)
  
 
 ## 运行效果 
@@ -48,8 +48,8 @@ import mars3d from "./mars3d/mars3d";
  此脚手架中类库不保证是最新版本，请您自行拷贝交付资料中任意包下的 lib\mars3d\ 覆盖至: src\map\mars3d\ 目录下
  
  
-### 与[mars3d-simple-react](https://github.com/marsgis/mars3d-simple-react)仓库的区别
-1. 当前是import方式引入lib的（包含mars3d），而 mars3d-simple-react是head静态资源引入。
+### 与[mars3d-react-project-react](https://github.com/marsgis/mars3d-react-project-react)仓库的区别
+1. 当前是import方式引入lib的（包含mars3d），而 mars3d-react-project-react是head静态资源引入。
 2. 当前仓库使用的是npm原生的Cesium库。
 
  
