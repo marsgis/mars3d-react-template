@@ -10,7 +10,7 @@ Cesium plugin that adds to the Cesium map a compass, navigator (zoom in/out), an
 
 ```javascript
 
-var viewer = new Cesium.Viewer('cesiumContainer', {
+var viewer = new Cesium.Viewer('mars3dContainer', {
     imageryProvider: false,
     baseLayerPicker: false,
     timeline: false,

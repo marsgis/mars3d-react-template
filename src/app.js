@@ -6,7 +6,7 @@ import mars3d from "./map/mars3d/mars3d";
 import { getMapConfig, getPoint } from "./map/api";
 import { createMap } from "./map/main";
 
-import "./cesiumContainer.css";
+import "./mars3dContainer.css";
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -87,7 +87,7 @@ class App extends React.PureComponent {
     let mapStyle = { height: "100%", width: "100%" };
     return (
       <React.Fragment>
-        <div id="cesiumContainer" className="itemContainer bg-gis collapsed">
+        <div id="mars3dContainer" className="itemContainer bg-gis collapsed">
           <div id="mapView" style={mapStyle} className="appmap" />
         </div>
       </React.Fragment>
