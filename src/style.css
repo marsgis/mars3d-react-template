@@ -9,9 +9,7 @@ body,html {
     left:0;
     width:calc(~"100%");
     position:absolute;
-    transition: all .3s;
-    //border-left: 3px solid rgb(0, 143, 217);
-
+    transition: all .3s; 
 }
 
 .collapsed{

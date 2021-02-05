@@ -5,9 +5,9 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const HtmlIncludeAssetsPlugin = require("html-webpack-include-assets-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin"); //打包时复制文件
-const cesiumSource = 'node_modules/cesium/Source';
+
+const cesiumSource = 'node_modules/mars3d-cesium/Source';
 
 module.exports = (env, args) => {
   const prod = args.mode === "production";
@@ -71,10 +71,6 @@ module.exports = (env, args) => {
         template: __dirname + "/public/index.html", //将指定的html页面内容覆盖到输出文件夹中的html里,并且会自动引入出口bundle.js以及分离出来的css文件
         favicon: __dirname + "/public/favicon.ico", //添加网站的图标
       }),
-      new HtmlIncludeAssetsPlugin({
-        append: false,
-        assets: ["cesium/Widgets/widgets.css", "cesium/Cesium.js"],
-      }),
       ...(prod ? [] : [new webpack.HotModuleReplacementPlugin()]),
 
       new webpack.DefinePlugin({
@@ -82,7 +78,7 @@ module.exports = (env, args) => {
       }),
       new CopyPlugin([
         {
-          from: `node_modules/cesium/Build/Cesium`,
+          from: `node_modules/mars3d-cesium/Build/Cesium`,
           to: "cesium",
         },
       ]),
