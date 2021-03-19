@@ -4,10 +4,9 @@ const path = require("path");
 
 const webpack = require("webpack");
 const HtmlPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin"); //打包时复制文件
 
-const cesiumSource = 'node_modules/mars3d-cesium/Source';
+const CopyWebpackPlugin = require("copy-webpack-plugin"); //打包时复制文件
+const cesiumSource = 'node_modules/mars3d-cesium/Build/Cesium/'
 
 module.exports = (env, args) => {
   const prod = args.mode === "production";
@@ -76,7 +75,7 @@ module.exports = (env, args) => {
       new webpack.DefinePlugin({
         CESIUM_BASE_URL: JSON.stringify("cesium"),
       }),
-      new CopyPlugin([
+      new CopyWebpackPlugin([
         {
           from: `node_modules/mars3d-cesium/Build/Cesium`,
           to: "cesium",
