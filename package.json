@@ -1,6 +1,6 @@
 {
   "name": "mars3d-react-template",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "ars3D三维地球平台软件,React最简项目模版",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "mars3d": "^3.0.22",
+    "mars3d": "^3.0.23",
     "core-js": "^3.8.2"
   },
   "devDependencies": {
