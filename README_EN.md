@@ -21,7 +21,7 @@
  🌎 Mars3D platform, the simplest application project template under the `React technology stack`.
    
 
- > For other technology stacks, please refer to： [https://github.com/marsgis/mars3d](https://github.com/marsgis/mars3d)
+
  
  
 
@@ -84,7 +84,8 @@ npm install mars3d   //or  cnpm install mars3d   or  yarn add mars3d
 ### Related websites 
 - Mars3D official website：[http://mars3d.cn](http://mars3d.cn)  
 
-- GitHub navigation list：[https://github.com/marsgis/mars3d](https://github.com/marsgis/mars3d)
+- Mars3D GitHub navigation list：[https://github.com/marsgis/mars3d](https://github.com/marsgis/mars3d)
+
 
 
 
