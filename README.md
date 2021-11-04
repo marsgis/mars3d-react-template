@@ -57,8 +57,31 @@ npm install mars3d   //或  cnpm install mars3d   或  yarn add mars3d
  > 场景配置文件：`public\config\config.json`
   
 
-3. ### 配置vue.config.js 
+3. ### 配置webpack.config.js 
   参考`webpack.config.js`修改自己项目的webpack配置，需要安装 "copy-webpack-plugin" 和看`mars3d-cesium`相关代码
+
+#### 不配置webpack.config.js时，直接引入CDN的Cesium库
+如果您在上面第3步骤集成中遇到各种奇怪问题无法解决，大部分是vue.config的配置问题时。 
+修改`public\index.html`中的下面注释
+```html
+<link href="https://cdn.jsdelivr.net/npm/mars3d-cesium/Build/Cesium/Widgets/widgets.css" rel="stylesheet"   type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/mars3d-cesium/Build/Cesium/Cesium.js"  type="text/javascript"></script>
+<script src="https://unpkg.com/@turf/turf/turf.min.js" type="text/javascript" ></script>
+```
+
+#### 不配置webpack.config.js时，直接引入外部Cesium库
+如果您在上面第3步骤集成中遇到各种奇怪问题无法解决，大部分是vue.config的配置问题时。
+可以直接在html中使用script引入的Cesium库 ，该方式不需要修改 `vue.config`  
+从官网下载的SDK中拷贝Cesium放在`public\lib\Cesium\`下,并取消`public\index.html`中的下面注释
+```html
+<script type="text/javascript" >
+  window.CESIUM_BASE_URL ="<%= BASE_URL %>lib/Cesium/"
+</script>
+<link rel="stylesheet" href="<%= BASE_URL %>lib/Cesium/Widgets/widgets.css">
+<script type="text/javascript" src="<%= BASE_URL %>lib/Cesium/Cesium.js"></script>
+```
+
+
 
 4. ### 创建地球 
  参考 `src\app.js`文件引入Map组件和构造创建地球 
@@ -69,6 +92,7 @@ npm install mars3d   //或  cnpm install mars3d   或  yarn add mars3d
   >1. 检查webpack和copy-webpack-plugin版本兼容问题
   >2. 检查webpack和copy-webpack-plugin与node、npm的版本兼容问题
  
+
 
 ## Mars3D 是什么 
 >  `Mars3D平台` 是[火星科技](http://marsgis.cn/)研发的一款基于 WebGL 技术实现的三维客户端开发平台，基于[Cesium](https://cesium.com/cesiumjs/)优化提升与B/S架构设计，支持多行业扩展的轻量级高效能GIS开发平台，能够免安装、无插件地在浏览器中高效运行，并可快速接入与使用多种GIS数据和三维模型，呈现三维空间的可视化，完成平台在不同行业的灵活应用。
