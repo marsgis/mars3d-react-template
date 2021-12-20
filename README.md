@@ -64,8 +64,8 @@ npm install mars3d   //或  cnpm install mars3d   或  yarn add mars3d
 如果您在上面第3步骤集成中遇到各种奇怪问题无法解决，大部分是vue.config的配置问题时。 
 修改`public\index.html`中的下面注释
 ```html
-<link href="https://cdn.jsdelivr.net/npm/mars3d-cesium/Build/Cesium/Widgets/widgets.css" rel="stylesheet"   type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/mars3d-cesium/Build/Cesium/Cesium.js"  type="text/javascript"></script>
+<link href="https://unpkg.com/mars3d-cesium/Build/Cesium/Widgets/widgets.css" rel="stylesheet"   type="text/css" />
+<script src="https://unpkg.com/mars3d-cesium/Build/Cesium/Cesium.js"  type="text/javascript"></script>
 <script src="https://unpkg.com/@turf/turf/turf.min.js" type="text/javascript" ></script>
 ```
 
