@@ -1,228 +1,69 @@
-body,html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.bg-gis{
-    background-size:auto;
-    overflow: hidden;
-    left:0;
-    width:calc(~"100%");
-    position:absolute;
-    transition: all .3s; 
+.bg-gis {
+  background-size: auto;
+  overflow: hidden;
+  left: 0;
+  width: "100%";
+  position: absolute;
+  transition: all 0.3s;
 }
 
-.collapsed{
-    left:0;
-    width:100%;
-    height: 100%;
+.collapsed {
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
-a {  color: #62a8ea;text-decoration: none;}
+a {
+  color: #62a8ea;
+  text-decoration: none;
+}
 
-a:hover, a:focus {
-    color: #89bceb;
-    text-decoration: underline;
+a:hover,
+a:focus {
+  color: #89bceb;
+  text-decoration: underline;
 }
 
 a:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline: none;
-    outline-offset: -2px;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
+  outline-offset: -2px;
 }
-ul, li {list-style: none;}
-
+ul,
+li {
+  list-style: none;
+}
 
 /*dark样式*/
-a{color:#ffffff;text-decoration: none;}
-a:hover {color:#CC3300;text-decoration:underline;}
-.content{
-    overflow: auto;
-    position: relative;
-    background: transparent;
-    height: 400px;
-    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
-
-.form-control, .input-group-addon, .btn-default, input  {
-    color: #ffffff;
-    background-color: rgba(63, 72, 84, 0.7);
+a:hover {
+  color: #cc3300;
+  text-decoration: underline;
 }
-.btn-info {
-    background-color: rgba(119, 214, 225, 0.2);
+.content {
+  overflow: auto;
+  position: relative;
+  background: transparent;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.btn-primary {
-    background-color: rgba(32, 160, 255, 0.2);
-}
-.btn-danger {
-    background-color: rgba(255, 109, 109, 0.2);
-}
-.cesium-popup-color {
-    color: #ffffff;
-}
-.cesium-popup-background {
-    background: rgba(63, 72, 84,0.9);
-}
-
-
-
-/* 重写Cesium的css */
-
-/**cesium按钮背景色*/
-.cesium-button {
-    background-color: #3f4854;
-    color: #e6e6e6;
-    fill: #e6e6e6;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    line-height: 32px;
-  }
-  
-  .cesium-viewer-geocoderContainer .cesium-geocoder-input {
-    background-color: rgba(63, 72, 84, 0.7);
-  }
-  
-  .cesium-viewer-geocoderContainer .cesium-geocoder-input:focus {
-    background-color: rgba(63, 72, 84, 0.9);
-  }
-  
-  .cesium-viewer-geocoderContainer .search-results {
-    background-color: #3f4854;
-  }
-  
-  .cesium-geocoder-searchButton {
-    background-color: #3f4854;
-  }
-  
-  .cesium-infoBox-title {
-    background-color: #3f4854;
-  }
-  
-  .cesium-infoBox {
-    background: rgba(63, 72, 84, 0.9);
-  }
-  
-  .cesium-toolbar-button img {
-    height: 100%;
-  }
-  
-  .cesium-performanceDisplay-defaultContainer {
-    top: auto;
-    bottom: 35px;
-    right: 50px;
-  }
-  .cesium-performanceDisplay-ms,
-  .cesium-performanceDisplay-fps {
-    color: #fff;
-  }
-  
-  /**cesium工具栏位置*/
-  .cesium-viewer-toolbar {
-    top: auto;
-    left: auto;
-    right: 12px;
-    bottom: 35px;
-  }
-  
-  .cesium-viewer-toolbar > .cesium-toolbar-button,
-  .cesium-navigationHelpButton-wrapper,
-  .cesium-viewer-geocoderContainer {
-    margin-bottom: 5px;
-    float: right;
-    clear: both;
-    text-align: center;
-  }
-  
-  .cesium-baseLayerPicker-dropDown {
-    bottom: 0;
-    right: 40px;
-    max-height: 700px;
-    margin-bottom: 5px;
-  }
-  
-  .cesium-navigation-help {
-    top: auto;
-    bottom: 0;
-    right: 40px;
-    transform-origin: right bottom;
-  }
-  
-  .cesium-sceneModePicker-wrapper {
-    width: auto;
-  }
-  
-  .cesium-sceneModePicker-wrapper .cesium-sceneModePicker-dropDown-icon {
-    float: left;
-    margin: 0 3px;
-  }
-  
-  .cesium-viewer-geocoderContainer .search-results {
-    left: 0;
-    right: 40px;
-    width: auto;
-    z-index: 9999;
-  }
-  
-  .cesium-infoBox-title {
-    background-color: #3f4854;
-  }
-  
-  .cesium-infoBox {
-    top: 50px;
-    background: rgba(63, 72, 84, 0.9);
-  }
-  
-  /**左下工具栏菜单*/
-  .toolbar-dropdown-menu-div {
-    background: rgba(43, 44, 47, 0.8);
-    border: 1px solid #2b2c2f;
-    z-index: 991;
-    position: absolute;
-    right: 60px;
-    bottom: 40px;
-    display: none;
-  }
-  
-  .toolbar-dropdown-menu {
-    min-width: 110px;
-    padding: 0;
-  }
-  .toolbar-dropdown-menu > li {
-    padding: 0 3px;
-    margin: 2px 0;
-  }
-  .toolbar-dropdown-menu > li > a {
-    color: #edffff;
-    display: block;
-    padding: 4px 10px;
-    clear: both;
-    font-weight: normal;
-    line-height: 1.6;
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  
-  .toolbar-dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    color: #fff;
-    background-color: #444d59;
-  }
-  
-  .toolbar-dropdown-menu > .active > a,
-  .dropdown-menu > .active > a:hover,
-  .dropdown-menu > .active > a:focus {
-    color: #fff;
-    background-color: #444d59;
-  }
-  
-  .toolbar-dropdown-menu i {
-    padding-right: 5px;
-  }
