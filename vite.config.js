@@ -6,8 +6,6 @@ import mars3dCesium from "./build/cesium-plugin";
 export default defineConfig({
   plugins: [
     react(),
-    mars3dCesium({
-      rebuildCesium: true,
-    }),
+    mars3dCesium(),
   ],
 });
