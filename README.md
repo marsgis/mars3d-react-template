@@ -60,6 +60,10 @@ npm run build
 ### 运行效果 
  [在线体验](http://marsgis.gitee.io/mars3d-es5-template/)  
  
+ ## 视频讲解
+
+建议先看一遍视频讲解，再实际操作，您可以[新页面查看高清视频](https://www.bilibili.com/video/BV1nZ4y1b7W7/)
+
 
 
 ## 如何集成到自己已有的项目中
