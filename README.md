@@ -2,7 +2,7 @@
 <img src="//mars3d.cn/logo.png" width="300px" />
 </p>
 
-<p align="center">基于 Vue3.x + Vite 的 Mars3D🌎最简项目模板</p>
+<p align="center">基于 React + Vite 的 Mars3D🌎最简项目模板</p>
 
 
 <p align="center">
@@ -25,19 +25,30 @@
 
 ## 建议环境配置
 
-1. 推荐使用 Visual Studio Code 编辑器
-2. 推荐安装 ESlint、Volar 插件（如果已经安装Vetur插件，需要禁用）并将格式化工具设置为eslint （settings.json配置如下）
+1. 推荐使用 Visual Studio Code 编辑器 
+- 安装 vscode 插件，推荐安装 ESlint 、 Prettier
+- 配置 vscode 参数
 
 ```json
-"[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-},
-"[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-},
-"[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-},
+// setting.json相关配置
+{
+  "eslint.format.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[react]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
 ```
 
 ## 运行命令
