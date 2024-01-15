@@ -1,6 +1,6 @@
 {
   "name": "mars3d-react-template",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "description": "Mars3D平台,React最简项目模版",
   "scripts": {
     "serve": "vite",
@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@turf/turf": "^6.5.0",
-    "mars3d": "~3.6.0",
-    "mars3d-cesium": "~1.112.0",
+    "mars3d": "~3.7.0",
+    "mars3d-cesium": "~1.113.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
