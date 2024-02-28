@@ -25,7 +25,7 @@ class App extends React.PureComponent {
 
   componentDidMount() {
     var mapUrl = "config/config.json";
-    mars3d.Resource.fetchJson({ url: mapUrl }).then((data) => {
+    mars3d.Util.fetchJson({ url: mapUrl }).then((data) => {
       this.initMars3d(data.map3d); // 构建地图
     });
   }
