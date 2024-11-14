@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@turf/turf": "^7.1.0",
-    "mars3d": "~3.8.0",
-    "mars3d-cesium": "~1.123.0",
+    "mars3d": "~3.8.7",
+    "mars3d-cesium": "~1.121.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

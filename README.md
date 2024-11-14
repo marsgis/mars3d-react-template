@@ -91,7 +91,7 @@ npm install mars3d   //或  cnpm install mars3d   或  yarn add mars3d
  > 场景配置文件：`public\config\config.json`
 
 ```javascript
-import "mars3d/dist/mars3d.css";
+import "mars3d/mars3d.css";
 import * as mars3d from "mars3d";
 ```
 
