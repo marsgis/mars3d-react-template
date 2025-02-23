@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@turf/turf": "^7.1.0",
+    "@turf/turf": "^7.2.0",
     "mars3d": "~3.9.0",
     "mars3d-cesium": "~1.126.0",
     "react": "^17.0.2",
